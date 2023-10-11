@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    margin-top: 20px;
+    height: 5%;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+header h1 {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    font-size: 50px;
+    margin-top: 3px;   
+}
+
+header h1:hover{
+    color: goldenrod;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li{
+    margin-left: 25px;
+    
+}
+
+.navbar-nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 0px 14px;
+}
+
+nav ul a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(235, 173, 15, 0.274);
+    border-radius: 8px;
+}
+
+#banner-bienvenida {
+    background-image: url('../img/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    
+    
+}
+
+section .bio-inicio {
+    position: relative;
+    width: 100%;
+    
+}
+
+.bio-inicio p {
+    text-align: justify;
+    font-size: 1.2em;
+    height: 500px;
+    padding: 50px; 
+}
+
+.bio-inicio img {
+    float: left;
+    height: 500px;
+    shape-outside: url(../img/Frank_Quintero.png);
+    shape-margin: 20px;
+}
+
+
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+#banner-tour {
+    background-image: url(../img/bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    height: 600px;
+    color: white;
+    background-attachment: fixed;
+    background-position: top center;
+
+}
+
+#banner-tour h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 20%;
+}
+
+#banner-tour table {
+    margin: 10%;
+    
+}
+/*================================================================================================================*/
+/* CSS Biografia */
+/*=================================================================================================================*/
+
+.bio-banner{
+    display: flex;
+    background: url("../img/fq1978.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.texto-primera-etapa{
+    color: white;
+    margin-top: 90px;
+    display: flex;
+    width: 50%;
+    background-color: rgba(96, 96, 97, 0.658); 
+    border-radius: 6px;
+    text-align: justify;
+    
+}
+
+.texto-primera-etapa p{
+    padding: 27px;
+    font-weight:300;
+}
+
+.solista-boston {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.solista-boston img{
+    width: 80%;
+    height: 80%;
+    margin-left: 15px;
+}
+
+
+/*CSS Discografia */
+#banner-discografia img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh; 
+}
+
+.card-discos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card{
+    filter: saturate(50%);
+    transition: filter 0.3s ease;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+}
+.card:hover{
+    filter: saturate(1.5);
+    
+    
+}
+.tarjetas-discos {
+    width: 15%;
+    height: 15%;
+    padding-right: 18px; 
+}
+
+.tarjetas-discos img{
+    transition: all 0.8s ease;
+}
+
+.tarjetas-discos img:hover{
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+
+.tarjetas-discos p{
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+
+footer p{
+    font-size: 12px;
+    text-align: center;
+}
+
+/* CSS contacto */
+#banner-contacto{
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+/* FORMULARIO */
+
+
+.contact_form{
+
+    width: 460px; 
+    height: auto;
+	border-radius: 10px;  
+	padding-bottom: 20px;  
+    background-color: #fbfbfb62; 
+    padding-left: 30px; 
+    
+}
+
+
+.contact_form input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #292829; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+
+.contact_form textarea{
+    background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:rgb(8, 8, 8); 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+
+.contact_form label{
+    display: block; 
+	float: center; 	
+}
+
+
+.contact_form button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #181617; 
+	border-color: #dad5d8; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+    cursor: pointer;
+}
+
+
+.contact_form button p{
+	color: #fff; 
+}
+
+
+.contact_form span{
+	color: #111111; 
+}
+
+.contact_form .aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+.contact_form h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #080808;
+}
+
+
+.contact_form h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+.contact_form p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid goldenrod;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid goldenrod;
+}
