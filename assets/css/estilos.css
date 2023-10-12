@@ -62,7 +62,7 @@ header ul li{
 
 .navbar-nav a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     font-weight: bolder;
     padding: 0px 14px;
@@ -179,41 +179,34 @@ footer{
     margin-left: 15px;
 }
 
-
+/*================================================================================================================*/
 /*CSS Discografia */
+/*================================================================================================================*/
 #banner-discografia img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    width: 100%;
-    height: 100vh; 
+    width: 100%; 
 }
 
 .card-discos{
-    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center; 
 }
 
+.card-title{
+    font-weight: bold;
+}
+
 .card{
     filter: saturate(50%);
     transition: filter 0.3s ease;
-    margin: 10px;
-    width: 300px;
-    height: 400px;
     cursor: pointer;
 }
 .card:hover{
-    filter: saturate(1.5);
-    
-    
-}
-.tarjetas-discos {
-    width: 15%;
-    height: 15%;
-    padding-right: 18px; 
+    filter: saturate(1.5); 
 }
 
 .tarjetas-discos img{
@@ -225,19 +218,13 @@ footer{
     transition: all 0.3s ease;
 }
 
-.tarjetas-discos p{
-    font-size: 12px;
-    text-align: center;
-    
+.btn {
+    background-color: goldenrod;
 }
 
-
-footer p{
-    font-size: 12px;
-    text-align: center;
-}
-
+/*================================================================================================================*/
 /* CSS contacto */
+/*================================================================================================================*/
 #banner-contacto{
     background-image: url(../img/contacto.jpg);
     background-repeat: no-repeat;
@@ -245,8 +232,9 @@ footer p{
     height: 1000px;
 }
 
+/*================================================================================================================*/
 /* FORMULARIO */
-
+/*================================================================================================================*/
 
 .contact_form{
 
