@@ -150,10 +150,17 @@ footer{
     
 }
 
-.texto-primera-etapa{
+.icon-despues{
+    width: 170px;
+    height: 200px;
+    
+}
+
+.texto-primera-etapa, .texto-segunda-etapa{
     color: white;
     margin-top: 90px;
     display: flex;
+    flex-direction: row;
     width: 50%;
     background-color: rgba(96, 96, 97, 0.658); 
     border-radius: 6px;
@@ -171,6 +178,7 @@ footer{
     display: flex;
     width: 100%;
     text-align: justify;
+    border: 5px solid red;
 }
 
 .solista-boston img{
