@@ -154,14 +154,30 @@ footer{
 .icon-despues{
     width: 170px;
     height: 200px;
+    float: left;
+    margin-right: 10px;
     
 }
 
-.texto-primera-etapa, .texto-segunda-etapa{
+.icon-travesia{
+    width: 170px;
+    height: 200px;
+    float: right;
+    margin-left: 10px;
+    
+}
+
+.icon-pajaros{
+    width: 70px;
+    height: 100px;
+    float: left;
+    
+    
+}
+
+.texto-primera-etapa{
     color: white;
     margin-top: 90px;
-    display: flex;
-    flex-direction: row;
     width: 50%;
     background-color: rgba(96, 96, 97, 0.658); 
     border-radius: 6px;
@@ -174,18 +190,29 @@ footer{
     font-weight:300;
 }
 
+.texto-segunda-etapa{
+    color: white;
+    width: 50%;
+    border-radius: 6px;
+    text-align: justify;
+    
+}
 .solista-boston {
     margin-top: 50px;
-    display: flex;
     width: 100%;
     text-align: justify;
-    border: 5px solid red;
+    
+}
+
+.solista-boston p, h4{
+    padding: 20px;
 }
 
 .solista-boston img{
-    width: 80%;
-    height: 80%;
-    margin-left: 15px;
+    width: 300px;
+    height: 350px;
+    float: right;
+    margin: 45px 20px 5px 15px;
 }
 
 /*================================================================================================================*/
