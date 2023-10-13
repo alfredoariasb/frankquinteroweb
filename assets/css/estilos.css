@@ -76,18 +76,17 @@ nav ul a:hover{
     border-radius: 8px;
 }
 
-#banner-bienvenida {
-    background-image: url('../img/bg-01.jpg');
+#banner-bienvenida img {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 0px;
-    height: 700px;
     background-attachment: fixed;
     background-position: center;
     object-fit: cover;
     
     
 }
+
+
 
 main {
     grid-area: main;
@@ -396,3 +395,52 @@ footer{
 	outline:0;
 	border: 1px solid goldenrod;
 }
+
+
+/*================================================================================================================*/
+/* MEDIAS QUERY */
+/*================================================================================================================*/
+@media screen and (max-width: 980px) { 
+
+    body {
+        width: 100vh;
+        height: 100vh;
+    }
+h1{
+    font-size: 20px;
+        
+    }
+header ul{
+    align-items: left;
+    }
+
+.navbar-nav dl, ol, ul{
+    margin-top: 40px;
+
+    }
+
+#banner-bienvenida img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-position: left bottom;
+}
+
+section .bio-inicio {
+    width: 65vh;
+}
+
+.bio-inicio img {
+    height: 35vh;
+
+}
+
+.bio-inicio p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
+}
+
+}
+    
