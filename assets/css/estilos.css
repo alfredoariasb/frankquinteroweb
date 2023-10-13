@@ -80,16 +80,10 @@ nav ul a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: right center;
-    
+    background-position: right center; 
     object-fit: contain;
     width: 100%;
-    
-    
-    
 }
-
-
 
 main {
     grid-area: main;
@@ -139,6 +133,8 @@ footer{
     grid-area: footer;
     background-color: black;
     color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-align: center;
 }
 /*================================================================================================================*/
 /* CSS Biografia */
@@ -265,210 +261,135 @@ footer{
     background-color: goldenrod;
 }
 
+.btn {
+	color: black
+}
+
 /*================================================================================================================*/
 /* CSS contacto */
 /*================================================================================================================*/
-#banner-contacto{
+.banner-contacto{
     background-image: url(../img/contacto.jpg);
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    
+}
+
+.dv-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.frank-guitarra img {
+    height: 90vh;
+    
 }
 
 /*================================================================================================================*/
 /* FORMULARIO */
 /*================================================================================================================*/
 
-.contact_form{
-
-    width: 460px; 
-    height: auto;
-	border-radius: 10px;  
-	padding-bottom: 20px;  
-    background-color: #fbfbfb62; 
-    padding-left: 30px; 
-    
-}
-
-
-.contact_form input{
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #292829; 
-	margin-top: 10px;  
-	padding-left: 10px;
-    margin-bottom: 20px; 
-}
-
-
-.contact_form textarea{
-    background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color:rgb(8, 8, 8); 
-	margin-top: 10px;  
-	padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-}
-
-
-.contact_form label{
-    display: block; 
-	float: center; 	
-}
-
-
-.contact_form button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	text-transform: uppercase;
-	background-color: #181617; 
-	border-color: #dad5d8; 
-	border-style: solid; 
-	border-radius: 10px;	
-	width: 420px;   
-    cursor: pointer;
-}
-
-
-.contact_form button p{
-	color: #fff; 
-}
-
-
-.contact_form span{
-	color: #111111; 
-}
-
-.contact_form .aviso{
-	font-size: 13px;  
-	color: #0e0e0e;  
-}
-
-
-.contact_form h1{
-	font-size: 39px;  
-	text-align: letf; 
-	padding-bottom: 20px; 
-	color: #080808;
-}
-
-
-.contact_form h3{
-	font-size: 16px; 
-	padding-bottom: 30px;
-	color: #0e0e0e;   
-}
-
-
-.contact_form p{
-	font-size: 14px; 
-	color: #0e0e0e; 
-}
-
-
-::-webkit-input-placeholder {
- color: #a8a8a8;
-}
-
-
-::-webkit-textarea-placeholder {
- color: #a8a8a8;
-}
-
-
-.formulario input:focus{
-	outline:0;
-	border: 1px solid goldenrod;
-}
-
-
-.formulario textarea:focus{
-  outline:0;
-	border: 1px solid goldenrod;
+.contact-form {
+    color: white;
+    width: 50%;
+    height: 100%; 
 }
 
 
 header{
-  border:1px solid red;
+border:1px solid red;
 }
 /*================================================================================================================*/
 /* MEDIAS QUERY */
 /*================================================================================================================*/
-/* On screens that are 992px or less, set the background color to blue */
+/* Para Pantallas (tablets o PC) hasta 992px o menos*/
 @media screen and (max-width: 992px) {
-  header{
+header{
     border:1px solid blueviolet;
-  }
+}
   
-  body {
+body {
     width: 100vh;
     height: 100vh;
     }
     
-    header h1{
-      font-size: 15px;
-      margin-right: 100px;
-      
-    }
+header h1{
+    font-size: 15px;
+    margin-right: 100px;
+
+}
     
-    header ul{
-      align-items: left;
+header ul{
+    align-items: left;
     }
     
     .navbar-nav dl, ol, ul{
-      margin-top: 40px;
-      
+    margin-top: 40px;
+
     }
-  
+
     #banner-bienvenida img {
-      object-fit: cover;
+    object-fit: cover;
     width: 100%;
     height: 100%;
-  }
-  
-  section .bio-inicio {
-    width: 65vh;
-  }
-  
-    .bio-inicio img {
-      height: 35vh;
-    }
-    
-    .bio-inicio p {
-      text-align: justify;
-      font-size: 1em;
-    padding: 10px;
-    width: 50%;
-  }
-  
 }
 
-/* On screens that are 600px or less, set the background color to olive */
+section .bio-inicio {
+    width: 65vh;
+}
+
+.bio-inicio img {
+    height: 35vh;
+    }
+    
+.bio-inicio p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
+}
+
+}
+
+/* Para Telefonos Moviles de Pantallas entre 0 a 600px*/
 @media screen and (max-width: 600px) {
-  header{
+header{
     border:1px solid yellowgreen;
-  }
-  
-  .navbar-collapse {
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+.navbar-nav {
+    margin-top: 350px;
+}
+
+.navbar-nav a {
+	text-decoration: none;
+	font-size: 25px;
+	color: rgb(5, 5, 5);
+	font-weight: bolder;
+	padding: 0px 14px;
+	z-index: 999999999999999999999999999999999999999999;
+}
+
+.navbar-collapse {
 	flex-basis: 100%;
 	flex-grow: 1;
 	align-items: center;
 	position: absolute;
 	/* top: 10px; */
-	border: 1px solid red;
-	margin-top: 125%;
+	
+	margin-top: 185%;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 6px;
 }
 
 #dvmenu {
@@ -487,8 +408,9 @@ header{
 
 .navbar.navbar-expand-lg.bg-body-dark {
     top: 0px !important;
-  }
-  .navbar-nav dl, ol, ul {
+}
+
+.navbar-nav dl, ol, ul {
 	margin-top:unset !important; 
 }
 
@@ -503,17 +425,28 @@ header{
     font-size: 1em;
     padding: 10px;
     width: 90%;
-  }
+}
 
-  .bio-banner {
+.bio-banner {
     display: flex;
     background: url("../img/fq1978.jpg");
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: repeat;
-      background-size: auto;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
+}
+
+.dv-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 }
