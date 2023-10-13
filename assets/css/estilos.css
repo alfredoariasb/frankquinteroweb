@@ -156,6 +156,7 @@ footer{
     height: 200px;
     float: left;
     margin-right: 10px;
+    border-radius: 10px;
     
 }
 
@@ -164,6 +165,7 @@ footer{
     height: 200px;
     float: right;
     margin-left: 10px;
+    border-radius: 10px;
     
 }
 
@@ -171,6 +173,7 @@ footer{
     width: 70px;
     height: 100px;
     float: left;
+    border-radius: 10px;
     
     
 }
