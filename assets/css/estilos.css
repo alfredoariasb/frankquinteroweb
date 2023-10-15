@@ -100,8 +100,9 @@ main {
 .bio-inicio p {
     text-align: justify;
     font-size: 1.1em;
-    padding: 30px;
-    width: 70%;
+    padding-top: 90px;
+    width: 80%;
+    text-align: justify;
 }
 
 .bio-inicio img {
@@ -148,7 +149,6 @@ footer{
     width: 100%;
     height: 400pxvh;
     float: right;
-    
     top: 0;
     left: 0;
     
@@ -163,10 +163,7 @@ footer{
     text-align: justify;
     padding: 27px;
     font-weight:300;
-    
-    
-    
-    
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.73);
 }
 
 
@@ -194,7 +191,7 @@ footer{
     border-radius: 6px;
     text-align: justify;
     border: 6px yellow solid;
-    padding-top: 160px;
+    
     
 }
 .solista-boston {
@@ -391,7 +388,7 @@ header{
 }
 
 header h1 {
-    font-size: 25px;
+    font-size: 24px;
     margin-right: 10px;
 }
 
