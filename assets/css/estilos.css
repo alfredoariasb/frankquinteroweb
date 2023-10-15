@@ -17,6 +17,7 @@ body{
     margin: 0px;
     padding: 0px;
     
+    
 }
 
 header {
@@ -66,7 +67,6 @@ header ul li{
     font-size: 15px;
     color: rgb(255, 255, 255);
     font-weight: bolder;
-    padding: 0px 14px;
     z-index: 999999999999999999999999999999999999999999;
 }
 
@@ -140,14 +140,35 @@ footer{
 /* CSS Biografia */
 /*=================================================================================================================*/
 
-.bio-banner{
-    display: flex;
-    background: url("../img/fq1978.jpg");
+
+.bio-banner img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 400pxvh;
+    float: right;
+    
+    top: 0;
+    left: 0;
+    
     
 }
+
+.texto-primera-etapa{
+    color: white;
+    width: 50%;
+    background-color: rgba(96, 96, 97, 0.658); 
+    border-radius: 6px;
+    text-align: justify;
+    padding: 27px;
+    font-weight:300;
+    
+    
+    
+    
+}
+
 
 .icon-despues{
     width: 170px;
@@ -167,35 +188,13 @@ footer{
     
 }
 
-.icon-pajaros{
-    width: 70px;
-    height: 100px;
-    float: left;
-    border-radius: 10px;
-    
-    
-}
-
-.texto-primera-etapa{
-    color: white;
-    margin-top: 90px;
-    width: 50%;
-    background-color: rgba(96, 96, 97, 0.658); 
-    border-radius: 6px;
-    text-align: justify;
-    
-}
-
-.texto-primera-etapa p{
-    padding: 27px;
-    font-weight:300;
-}
-
 .texto-segunda-etapa{
-    color: white;
-    width: 50%;
+    color: rgb(12, 12, 12);
+    width: 100%;
     border-radius: 6px;
     text-align: justify;
+    border: 6px yellow solid;
+    padding-top: 160px;
     
 }
 .solista-boston {
@@ -205,15 +204,20 @@ footer{
     
 }
 
-.solista-boston p, h4{
-    padding: 20px;
-}
-
 .solista-boston img{
     width: 300px;
     height: 350px;
     float: right;
     margin: 45px 20px 5px 15px;
+}
+
+.icon-pajaros{
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+    
+    
 }
 
 /*================================================================================================================*/
@@ -315,8 +319,8 @@ header{
 }
   
 body {
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     }
     
 header h1{
@@ -365,6 +369,7 @@ header{
 
 header h1 {
     font-size: 25px;
+    margin-right: -20px;
 }
 
 .navbar-nav {
@@ -428,15 +433,14 @@ header h1 {
 }
 
 .bio-banner {
-    display: flex;
-    background: url("../img/fq1978.jpg");
+    top: 0;
+    background-repeat: no-repeat;
     background-position-x: 0%;
     background-position-y: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    height: 100%;
+    
+    
 }
 
 .dv-contact{
