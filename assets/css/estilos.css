@@ -13,7 +13,7 @@ body{
     "main main main main"
     "footer footer footer footer";
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     
@@ -316,48 +316,7 @@ float: right;
 /*================================================================================================================*/
 /* MEDIAS QUERY */
 /*================================================================================================================*/
-/* Para Pantallas (tablets o PC) hasta 992px o menos*/
-@media screen and (max-width: 992px) {
 
-  
-    body {
-    width: 100vh;
-    height: 100vh;
-}
-        
-header h1{
-    font-size: 15px;
-    margin-right: 100px;
-
-}
-    
-.navbar-nav dl, ol, ul{
-    margin-top: 40px;
-
-}
-
-#banner-bienvenida img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.bio-inicio {
-    height: 60vh;
-}
-
-.bio-inicio img {
-    height: 35vh;
-    }
-    
-.bio-inicio p {
-    text-align: justify;
-    font-size: 1em;
-    padding: 10px;
-    width: 9  0%;
-}
-
-}
 
 /* Para Telefonos Moviles de Pantallas entre 0 a 600px*/
 @media screen and (max-width: 600px) {
@@ -367,9 +326,14 @@ header h1{
     height: 100%;
 }
 
+header {
+  border: 5px green solid;
+}
+
 
   header h1 {
-    font-size: 20px;
+    font-size: 30px;
+    margin-right: 30px;
 }
 
   .navbar-nav {
@@ -424,7 +388,7 @@ header h1{
 .bio-inicio {
 	position: relative;
 	width: 100%;
-	height: 94vh;
+	height: 80vh;
 }
 
 .bio-inicio p {
@@ -434,20 +398,18 @@ header h1{
     width: 90%;
 }
 
-.bio-banner {
-    display: flex;
-    background: url("../img/fq1978.jpg");
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.bio-inicio img {
+	height: 26vh;
+}
+
+.bio-banner img{
+   width: 50%;
 }
 
 #banner-tour {
-	padding: 10px 0px;
+	padding: 50px 0px;
+  height: 100vh;
+  margin-top: 80px;
 }
 
 .dv-contact{
@@ -458,6 +420,66 @@ header h1{
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.texto-primera-etapa {
+	margin-top: 0px;
+	padding: 112px 16px;
+}
+
+.frank-guitarra img {
+	height: 20vh;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+}
+
+/* Para Pantallas (tablets o PC) hasta 992px o menos*/
+@media screen and (min-width: 601px) and (max-width: 992px) {
+
+  header {
+    border: 6px violet solid;
+  }
+  
+  body {
+  width: 100%;
+  height: 100%;
+}
+      
+header h1{
+  font-size: 30px;
+  margin-right: 100px;
+
+}
+  
+.navbar-nav dl, ol, ul{
+  margin-top: 40px;
+
+}
+
+#banner-bienvenida img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bio-inicio {
+  height: 90vh;
+}
+
+.bio-inicio img {
+  height: 60vh;
+  }
+  
+.bio-inicio p {
+  text-align: justify;
+  font-size: 1em;
+  padding: 10px;
+  width: 90%;
+  width: 90%;
 }
 
 }
