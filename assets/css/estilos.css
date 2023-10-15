@@ -317,26 +317,46 @@ border:1px solid red;
 header{
     border:1px solid blueviolet;
 }
-  
+
 body {
     width: 100%;
     height: 100%;
-    }
+}
     
-header h1{
-    font-size: 15px;
-    margin-right: 100px;
-
+header h1 {
+    font-size: 25px;
+    margin-right: -20px;
 }
     
 header ul{
     align-items: left;
     }
     
-    .navbar-nav dl, ol, ul{
+.navbar-nav dl, ol, ul{
     margin-top: 40px;
 
-    }
+}
+
+.navbar-nav a {
+	text-decoration: none;
+	font-size: 25px;
+	color: rgb(5, 5, 5);
+	font-weight: bolder;
+	padding: 0px 14px;
+	z-index: 999999999999999999999999999999999999999999;
+}
+
+.navbar-collapse {
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+	position: absolute;
+	/* top: 10px; */
+	
+	margin-top: 185%;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 6px;
+}
 
     #banner-bienvenida img {
     object-fit: cover;
@@ -344,8 +364,11 @@ header ul{
     height: 100%;
 }
 
-section .bio-inicio {
-    width: 65vh;
+.bio-inicio {
+	position: relative;
+	width: 100%;
+	height: 80vh;
+  margin-top: 30px;
 }
 
 .bio-inicio img {
@@ -356,7 +379,7 @@ section .bio-inicio {
     text-align: justify;
     font-size: 1em;
     padding: 10px;
-    width: 50%;
+    width: 90%;
 }
 
 }
@@ -369,7 +392,7 @@ header{
 
 header h1 {
     font-size: 25px;
-    margin-right: -20px;
+    margin-right: 10px;
 }
 
 .navbar-nav {
@@ -422,14 +445,14 @@ header h1 {
 .bio-inicio {
 	position: relative;
 	width: 100%;
-	height: 70vh;
+	height: 82vh;
 }
 
 .bio-inicio p {
     text-align: justify;
     font-size: 1em;
     padding: 10px;
-    width: 90%;
+    width: 100%;
 }
 
 .bio-banner {
@@ -441,6 +464,17 @@ header h1 {
     height: 100%;
     
     
+}
+
+#banner-tour {
+	background-image: url(../img/bg-02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px;
+	height: 600px;
+	color: white;
+	background-attachment: fixed;
+	background-position: top center;
 }
 
 .dv-contact{
