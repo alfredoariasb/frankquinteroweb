@@ -17,7 +17,6 @@ body{
     margin: 0px;
     padding: 0px;
     
-    
 }
 
 header {
@@ -67,6 +66,7 @@ header ul li{
     font-size: 15px;
     color: rgb(255, 255, 255);
     font-weight: bolder;
+    padding: 0px 14px;
     z-index: 999999999999999999999999999999999999999999;
 }
 
@@ -100,9 +100,8 @@ main {
 .bio-inicio p {
     text-align: justify;
     font-size: 1.1em;
-    padding-top: 90px;
-    width: 80%;
-    text-align: justify;
+    padding: 30px;
+    width: 70%;
 }
 
 .bio-inicio img {
@@ -141,31 +140,15 @@ footer{
 /* CSS Biografia */
 /*=================================================================================================================*/
 
-
 .bio-banner img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400pxvh;
     float: right;
-    top: 0;
-    left: 0;
-    
-    
-}
-
-.texto-primera-etapa{
-    color: white;
     width: 50%;
-    background-color: rgba(96, 96, 97, 0.658); 
-    border-radius: 6px;
-    text-align: justify;
-    padding: 27px;
-    font-weight:300;
-    text-shadow: 3px 2px 7px rgba(0,0,0,0.73);
+    height: 565px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
 }
-
 
 .icon-despues{
     width: 170px;
@@ -177,21 +160,51 @@ footer{
 }
 
 .icon-travesia{
+float: right;
     width: 170px;
     height: 200px;
-    float: right;
-    margin-left: 10px;
     border-radius: 10px;
+    margin-left: 20px;
     
 }
 
+.texto-primera-etapa{
+    color: rgb(9, 9, 9);
+    width: 50%;
+    background-color: rgba(52, 52, 53, 0.622); 
+    border-radius: 6px;
+    text-align: justify;
+    text-shadow: 1px 1px 5px rgba(111, 107, 107, 0.64);
+    font-weight: bolder;
+    margin-top: 40px;
+    padding: 0px 16px;
+    
+    
+}
+
+.primera-etapa-b{
+  text-align: justify;
+  margin-left: 27px;
+
+}
+
+.icon-pajaros{
+  width: 200px;
+  height: 200px;
+  float: right;
+  border-radius: 10px;
+  padding-left: 20px;
+  
+  
+}
+
 .texto-segunda-etapa{
-    color: rgb(12, 12, 12);
+    color: rgb(9, 9, 9);
     width: 100%;
     border-radius: 6px;
     text-align: justify;
-    border: 6px yellow solid;
-    
+    padding: 27px;
+    margin-top: 10%;
     
 }
 .solista-boston {
@@ -204,17 +217,8 @@ footer{
 .solista-boston img{
     width: 300px;
     height: 350px;
-    float: right;
-    margin: 45px 20px 5px 15px;
-}
-
-.icon-pajaros{
-    width: 300px;
-    height: 300px;
     float: left;
-    border-radius: 10px;
-    
-    
+    margin: 45px 20px 5px 15px;
 }
 
 /*================================================================================================================*/
@@ -233,6 +237,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center; 
     margin-top: 20px;
+    gap: 20px;
 }
 
 .card-title, .card-text {
@@ -314,58 +319,31 @@ border:1px solid red;
 header{
     border:1px solid blueviolet;
 }
+  
+    body {
+    width: 100vh;
+    height: 100vh;
+}
+        
+header h1{
+    font-size: 15px;
+    margin-right: 100px;
 
-body {
-    width: 100%;
-    height: 100%;
 }
-    
-header h1 {
-    font-size: 25px;
-    margin-right: -20px;
-}
-    
-header ul{
-    align-items: left;
-    }
     
 .navbar-nav dl, ol, ul{
     margin-top: 40px;
 
 }
 
-.navbar-nav a {
-	text-decoration: none;
-	font-size: 25px;
-	color: rgb(5, 5, 5);
-	font-weight: bolder;
-	padding: 0px 14px;
-	z-index: 999999999999999999999999999999999999999999;
-}
-
-.navbar-collapse {
-	flex-basis: 100%;
-	flex-grow: 1;
-	align-items: center;
-	position: absolute;
-	/* top: 10px; */
-	
-	margin-top: 185%;
-    background-color: rgba(255, 255, 255, 0.349);
-    border-radius: 6px;
-}
-
-    #banner-bienvenida img {
+#banner-bienvenida img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
 .bio-inicio {
-	position: relative;
-	width: 100%;
-	height: 80vh;
-  margin-top: 30px;
+    height: 60vh;
 }
 
 .bio-inicio img {
@@ -376,27 +354,31 @@ header ul{
     text-align: justify;
     font-size: 1em;
     padding: 10px;
-    width: 90%;
+    width: 9  0%;
 }
 
 }
 
 /* Para Telefonos Moviles de Pantallas entre 0 a 600px*/
 @media screen and (max-width: 600px) {
-header{
+
+  body {
+    width: 100%;
+    height: 100%;
+}
+  header{
     border:1px solid yellowgreen;
 }
 
-header h1 {
-    font-size: 24px;
-    margin-right: 10px;
+  header h1 {
+    font-size: 20px;
 }
 
-.navbar-nav {
+  .navbar-nav {
     margin-top: 350px;
 }
 
-.navbar-nav a {
+  .navbar-nav a {
 	text-decoration: none;
 	font-size: 25px;
 	color: rgb(5, 5, 5);
@@ -405,73 +387,69 @@ header h1 {
 	z-index: 999999999999999999999999999999999999999999;
 }
 
-.navbar-collapse {
+  .navbar-collapse {
 	flex-basis: 100%;
 	flex-grow: 1;
 	align-items: center;
 	position: absolute;
-	/* top: 10px; */
-	
 	margin-top: 185%;
-    background-color: rgba(255, 255, 255, 0.349);
-    border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.349);
+  border-radius: 6px;
 }
 
-#dvmenu {
-	/* position: absolute; */
+  #dvmenu {
 	top: 0px !important;
 	/* float: right; */
 	display: flex;
 	flex: 1;
 }
+
 #dvloguito {
-	/* position: absolute; */
-	/* float: left; */
 	display: flex;
 	flex: 1;
 }
 
 .navbar.navbar-expand-lg.bg-body-dark {
-    top: 0px !important;
+  top: 0px !important;
 }
 
 .navbar-nav dl, ol, ul {
 	margin-top:unset !important; 
 }
 
+#banner-bienvenida img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
 .bio-inicio {
 	position: relative;
 	width: 100%;
-	height: 82vh;
+	height: 94vh;
 }
 
 .bio-inicio p {
     text-align: justify;
     font-size: 1em;
     padding: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 .bio-banner {
-    top: 0;
-    background-repeat: no-repeat;
+    display: flex;
+    background: url("../img/fq1978.jpg");
     background-position-x: 0%;
     background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    
-    
+    background-position: center;
 }
 
 #banner-tour {
-	background-image: url(../img/bg-02.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 100px 0px;
-	height: 600px;
-	color: white;
-	background-attachment: fixed;
-	background-position: top center;
+	padding: 10px 0px;
 }
 
 .dv-contact{
