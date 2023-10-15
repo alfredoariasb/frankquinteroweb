@@ -188,6 +188,10 @@ float: right;
 
 }
 
+.segunda-etapa {
+  background-color: rgba(0, 0, 0, 0.175);
+}
+
 .icon-pajaros{
   width: 200px;
   height: 200px;
@@ -308,17 +312,13 @@ float: right;
 }
 
 
-header{
-border:1px solid red;
-}
+
 /*================================================================================================================*/
 /* MEDIAS QUERY */
 /*================================================================================================================*/
 /* Para Pantallas (tablets o PC) hasta 992px o menos*/
 @media screen and (max-width: 992px) {
-header{
-    border:1px solid blueviolet;
-}
+
   
     body {
     width: 100vh;
@@ -366,9 +366,7 @@ header h1{
     width: 100%;
     height: 100%;
 }
-  header{
-    border:1px solid yellowgreen;
-}
+
 
   header h1 {
     font-size: 20px;
