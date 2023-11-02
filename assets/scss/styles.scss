@@ -13,7 +13,7 @@ body{
     "main main main main"
     "footer footer footer footer";
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     
@@ -32,32 +32,29 @@ header {
     align-items: center;
     background-color: #232524a9;
     z-index: 999999999;
-    
-    
-    
-}
+    h1 {
+        font-family: 'Rock Salt', cursive;
+        color: white;
+        font-size: 30px;
+        margin-top: 4px;   
+    }
 
-header h1 {
-    font-family: 'Rock Salt', cursive;
-    color: white;
-    font-size: 30px;
-    margin-top: 4px;   
-}
+    h1:hover{
+        color: goldenrod;
+    }
 
-header h1:hover{
-    color: goldenrod;
-}
-
-header ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
     
-}
-
-header ul li{
-    margin-left: 25px;
+    ul li{
+        margin-left: 25px;
+        
+    }
     
 }
 
@@ -94,19 +91,19 @@ main {
     position: relative;
     width: 100%;
     height: 100vh;
+
+    p {
+        text-align: justify;
+        font-size: 1.1em;
+        padding: 30px;
+        width: 70%;
+    }
     
-}
-
-.bio-inicio p {
-    text-align: justify;
-    font-size: 1.1em;
-    padding: 30px;
-    width: 70%;
-}
-
-.bio-inicio img {
-    float: left;
-    height: 100vh;
+    img {
+        float: left;
+        height: 100vh;
+    }
+    
 }
 
 
@@ -120,13 +117,13 @@ main {
     background-attachment: fixed;
     background-position: top center;
 
-}
+    #banner-tour h3{
+        color: white;
+        font-size: 50px;
+        font-weight: 400;
+        margin-left: 20%;
+    }
 
-#banner-tour h3{
-    color: white;
-    font-size: 50px;
-    font-weight: 400;
-    margin-left: 20%;
 }
 
 footer{
@@ -140,14 +137,13 @@ footer{
 /* CSS Biografia */
 /*=================================================================================================================*/
 
-.bio-banner img {
-    float: right;
-    width: 50%;
-    height: 565px;
+.bio-banner{
+    display: flex;
+    background: url("../img/fq1978.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    object-fit: cover;
+    
 }
 
 .icon-despues{
@@ -160,70 +156,65 @@ footer{
 }
 
 .icon-travesia{
-float: right;
     width: 170px;
     height: 200px;
+    float: right;
+    margin-left: 10px;
     border-radius: 10px;
-    margin-left: 20px;
     
-}
-
-.texto-primera-etapa{
-    color: rgb(9, 9, 9);
-    width: 50%;
-    background-color: rgba(52, 52, 53, 0.622); 
-    border-radius: 6px;
-    text-align: justify;
-    text-shadow: 1px 1px 5px rgba(111, 107, 107, 0.64);
-    font-weight: bolder;
-    margin-top: 40px;
-    padding: 0px 16px;
-    
-    
-}
-
-.primera-etapa-b{
-  text-align: justify;
-  margin-left: 27px;
-
-}
-
-.segunda-etapa {
-  background-color: rgba(0, 0, 0, 0.175);
 }
 
 .icon-pajaros{
-  width: 200px;
-  height: 200px;
-  float: right;
-  border-radius: 10px;
-  padding-left: 20px;
-  
-  
+    width: 70px;
+    height: 100px;
+    float: left;
+    border-radius: 10px;
+
+}
+
+.texto-primera-etapa{
+    color: white;
+    margin-top: 90px;
+    width: 50%;
+    background-color: rgba(96, 96, 97, 0.658); 
+    border-radius: 6px;
+    text-align: justify;
+
+    p{
+        
+        padding: 27px;
+        font-weight:300;
+    }
+
 }
 
 .texto-segunda-etapa{
-    color: rgb(9, 9, 9);
-    width: 100%;
+    color: rgb(10, 10, 10);
+    width: 50%;
     border-radius: 6px;
     text-align: justify;
-    padding: 27px;
-    margin-top: 10%;
     
 }
+
 .solista-boston {
     margin-top: 50px;
     width: 100%;
     text-align: justify;
+
+    p, h4{
+        padding: 20px;
+    }
+    
+    img{
+        width: 300px;
+        height: 350px;
+        float: right;
+        margin: 45px 20px 5px 15px;
+    }
     
 }
 
-.solista-boston img{
-    width: 300px;
-    height: 350px;
-    float: left;
-    margin: 45px 20px 5px 15px;
-}
+
 
 /*================================================================================================================*/
 /*CSS Discografia */
@@ -241,7 +232,6 @@ float: right;
     flex-wrap: wrap;
     justify-content: center; 
     margin-top: 20px;
-    gap: 20px;
 }
 
 .card-title, .card-text {
@@ -312,30 +302,76 @@ float: right;
 }
 
 
-
+header{
+border:1px solid red;
+}
 /*================================================================================================================*/
 /* MEDIAS QUERY */
 /*================================================================================================================*/
+/* Para Pantallas moviles en horizontal o tablets hasta 992px o menos*/
+@media screen and (max-width: 992px) {
+header{
+    border:1px solid blueviolet;
+}
+  
+body {
+    width: 100vh;
+    height: 100vh;
+    }
+    
+header h1{
+    font-size: 15px;
+    margin-right: 100px;
 
+}
+    
+header ul{
+    align-items: left;
+    }
+    
+    .navbar-nav dl, ol, ul{
+    margin-top: 40px;
 
-/* Para Telefonos Moviles de Pantallas entre 0 a 600px*/
-@media screen and (max-width: 600px) {
+    }
 
-  body {
+    #banner-bienvenida img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-  header h1 {
-    font-size: 26px;
-    margin-right: 30px;
+section .bio-inicio {
+    width: 65vh;
 }
 
-  .navbar-nav {
+.bio-inicio img {
+    height: 35vh;
+    }
+    
+.bio-inicio p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
+}
+
+}
+
+/* Para Telefonos Moviles de Pantallas vertical entre 0 a 600px*/
+@media screen and (max-width: 600px) {
+header{
+    border:1px solid yellowgreen;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+.navbar-nav {
     margin-top: 350px;
 }
 
-  .navbar-nav a {
+.navbar-nav a {
 	text-decoration: none;
 	font-size: 25px;
 	color: rgb(5, 5, 5);
@@ -344,46 +380,44 @@ float: right;
 	z-index: 999999999999999999999999999999999999999999;
 }
 
-  .navbar-collapse {
+.navbar-collapse {
 	flex-basis: 100%;
 	flex-grow: 1;
 	align-items: center;
 	position: absolute;
+	/* top: 10px; */
+	
 	margin-top: 185%;
-  background-color: rgba(255, 255, 255, 0.349);
-  border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 6px;
 }
 
-  #dvmenu {
+#dvmenu {
+	/* position: absolute; */
 	top: 0px !important;
 	/* float: right; */
 	display: flex;
 	flex: 1;
 }
-
 #dvloguito {
+	/* position: absolute; */
+	/* float: left; */
 	display: flex;
 	flex: 1;
 }
 
 .navbar.navbar-expand-lg.bg-body-dark {
-  top: 0px !important;
+    top: 0px !important;
 }
 
 .navbar-nav dl, ol, ul {
 	margin-top:unset !important; 
 }
 
-#banner-bienvenida img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-
 .bio-inicio {
 	position: relative;
 	width: 100%;
-	height: 80vh;
+	height: 70vh;
 }
 
 .bio-inicio p {
@@ -393,18 +427,16 @@ float: right;
     width: 90%;
 }
 
-.bio-inicio img {
-	height: 26vh;
-}
-
-.bio-banner img{
-   width: 50%;
-}
-
-#banner-tour {
-	padding: 50px 0px;
-  height: 100vh;
-  margin-top: 80px;
+.bio-banner {
+    display: flex;
+    background: url("../img/fq1978.jpg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .dv-contact{
@@ -415,68 +447,6 @@ float: right;
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
-
-.texto-primera-etapa {
-	margin-top: 0px;
-	padding: 112px 16px;
-}
-
-.frank-guitarra img {
-	height: 39vh;
-}
-
-.contact-form {
-  margin-top: 40px;
-}
-
-}
-
-/* Para Pantallas (tablets o PC) hasta 992px o menos*/
-@media screen and (min-width: 601px) and (max-width: 992px) {
-
-
-  
-  body {
-  width: 100%;
-  height: 100%;
-}
-      
-header h1{
-  font-size: 23px;
-  margin-right: 100px;
-
-}
-  
-.navbar-nav dl, ol, ul{
-  margin-top: 40px;
-
-}
-
-#banner-bienvenida img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.bio-inicio {
-  height: 90vh;
-}
-
-.bio-inicio img {
-  height: 60vh;
-  }
-  
-.bio-inicio p {
-  text-align: justify;
-  font-size: 1em;
-  padding: 10px;
-  width: 90%;
-  width: 90%;
-}
-
-.frank-guitarra img {
-	height: 100vh;
 }
 
 }
