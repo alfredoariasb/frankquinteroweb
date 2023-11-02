@@ -302,17 +302,17 @@ footer{
 }
 
 
-header{
+/*header{
 border:1px solid red;
-}
+}*/
 /*================================================================================================================*/
 /* MEDIAS QUERY */
 /*================================================================================================================*/
 /* Para Pantallas moviles en horizontal o tablets hasta 992px o menos*/
 @media screen and (max-width: 992px) {
-header{
+/*header{
     border:1px solid blueviolet;
-}
+}*/
   
 body {
     width: 100vh;
@@ -359,9 +359,9 @@ section .bio-inicio {
 
 /* Para Telefonos Moviles de Pantallas vertical entre 0 a 600px*/
 @media screen and (max-width: 600px) {
-header{
+/*header{
     border:1px solid yellowgreen;
-}
+}*/
 
 header h1 {
     font-size: 25px;
