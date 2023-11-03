@@ -122,19 +122,20 @@ body .bio-banner img {
   height: 100%;
   background-size: cover;
 }
-body .icon-despues {
+body .icon-despues,
+body .icon-travesia {
   width: 170px;
   height: 200px;
   float: left;
   margin-right: 10px;
   border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
-body .icon-travesia {
-  width: 170px;
-  height: 200px;
-  float: right;
-  margin-left: 10px;
-  border-radius: 10px;
+body .icon-despues:hover,
+body .icon-travesia:hover {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+  opacity: 0.7;
 }
 body .icon-pajaros {
   width: 70px;
@@ -169,7 +170,8 @@ body .solista-boston {
   width: 100%;
   text-align: justify;
 }
-body .solista-boston p, body .solista-boston h4 {
+body .solista-boston p,
+body .solista-boston h4 {
   padding: 20px;
 }
 body .solista-boston img {
@@ -191,7 +193,8 @@ body .card-discos {
   justify-content: center;
   margin-top: 20px;
 }
-body .card-discos .card-title, body .card-discos .card-text {
+body .card-discos .card-title,
+body .card-discos .card-text {
   font-weight: bold;
   font-size: 13px;
 }
@@ -249,7 +252,9 @@ body .contact-form {
   body body header ul {
     align-items: left;
   }
-  body body .navbar-nav dl, body body ol, body body ul {
+  body body .navbar-nav dl,
+  body body ol,
+  body body ul {
     margin-top: 40px;
   }
   body body #banner-bienvenida img {
@@ -304,7 +309,9 @@ body .contact-form {
   body .navbar.navbar-expand-lg.bg-body-dark {
     top: 0px !important;
   }
-  body .navbar-nav dl, body ol, body ul {
+  body .navbar-nav dl,
+  body ol,
+  body ul {
     margin-top: unset !important;
   }
   body .bio-inicio {
