@@ -102,6 +102,8 @@ main {
     img {
         float: left;
         height: 100vh;
+        
+        
     }
     
 }
@@ -137,13 +139,32 @@ footer{
 /* CSS Biografia */
 /*=================================================================================================================*/
 
-.bio-banner{
+.primera-etapa {
     display: flex;
-    background: url("../img/fq1978.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    flex-direction: row;
     
+    
+    
+    
+}
+.bio-banner{
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    
+
+    img {
+        width: 100%; 
+        height: 100%;       
+        
+        background-size: cover;
+        
+        
+        
+    }
+    
+
+
 }
 
 .icon-despues{
@@ -173,17 +194,21 @@ footer{
 }
 
 .texto-primera-etapa{
-    color: white;
-    margin-top: 90px;
-    width: 50%;
+    margin-top: 35px;
+    color: rgb(0, 0, 0);
+    width: 90%;
     background-color: rgba(96, 96, 97, 0.658); 
     border-radius: 6px;
     text-align: justify;
 
     p{
-        
+        font-weight: bold;
         padding: 27px;
         font-weight:300;
+    }
+
+    h4 {
+        text-align: center;
     }
 
 }
