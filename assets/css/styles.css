@@ -103,6 +103,12 @@ body .bio-inicio img {
 }
 
 #banner-bienvenida img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right center;
+  object-fit: contain;
+  width: 100%;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
