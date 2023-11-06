@@ -1,389 +1,110 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
+//GENERAL
+@import './general/variables';
+@import './general/tipografias.scss';
+@import './general/reset.scss';
 
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-  "header header header header"
-  "main main main main"
-  "footer footer footer footer";
-  width: 100%;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
+//LAYOUT
+@import './layout/header.scss';
+@import './layout/body.scss';
+@import './layout/main.scss';
+@import './layout/footer.scss';
 
-  header {
-    grid-area: header;
-    width: 100%;
-    height: 5%;
-    padding: 20px 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #232524a9;
-    z-index: 999999999;
+//PAGES
+@import './pages/inicio.scss';
+@import './pages/biografia.scss';
+@import './pages/discografia.scss';
+@import './pages/contacto.scss';
 
-    h1 {
-    font-family: "Rock Salt", cursive;
-    color: white;
-    font-size: 30px;
-    margin-top: 4px;
+//MEDIAS QUERYS
+@import './general/medias-querys.scss';
 
-    &:hover {
-        color: goldenrod;
-        }
-    }
 
-    ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    li {
-        margin-left: 25px;
-        }
-    }
-}
-
-.navbar-nav a {
+@include mobile{
+  body header h1 {
+    font-size: 25px;
+  }
+  body .navbar-nav {
+    margin-top: 350px;
+  }
+  body .navbar-nav a {
     text-decoration: none;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
+    font-size: 25px;
+    color: rgb(5, 5, 5);
     font-weight: bolder;
     padding: 0px 14px;
-    z-index: 999999999999999999999999999999999999999999;
+    z-index: 1000000000000000000000000000000000000000000;
   }
-
-  nav ul a:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgba(235, 173, 15, 0.274);
-    border-radius: 8px;
+  body .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    position: absolute;
+    margin-top: 185%;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 6px;
   }
-
-  #banner-bienvenida img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: right center;
-    object-fit: contain;
-    width: 100%;
+  body #dvmenu {
+    top: 0px !important;
   }
-
-  main {
-    grid-area: main;
+  body #dvloguito {
+    display: flex;
+    flex: 1;
   }
-
-  .bio-inicio {
+  body .navbar.navbar-expand-lg.bg-body-dark {
+    top: 0px !important;
+  }
+  body .navbar-nav dl,
+  body ol,
+  body ul {
+    margin-top: unset !important;
+  }
+  body .bio-inicio {
     position: relative;
     width: 100%;
-    height: 100vh;
-
-    p {
-      text-align: justify;
-      font-size: 1.1em;
-      padding: 30px;
-      width: 70%;
-    }
-
-    img {
-      float: left;
-      height: 100vh;
-    }
+    height: 70vh;
   }
-
-  #banner-tour {
-    background-image: url(../img/bg-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 40px;
-    height: 600px;
-    color: white;
-    background-attachment: fixed;
-    background-position: top center;
-
-    #banner-tour h3 {
-      color: white;
-      font-size: 50px;
-      font-weight: 400;
-      margin-left: 20%;
-    }
-  }
-
-  footer {
-    grid-area: footer;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .primera-etapa {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .bio-banner {
-    margin-top: 50px;
-    width: 100%;
-    height: 500px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-    }
-  }
-
-  .icon-despues,
-  .icon-travesia {
-    width: 170px;
-    height: 200px;
-    float: left;
-    margin-right: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-    &:hover {
-      transform: scale(1.1);
-      filter: grayscale(100%);
-      opacity: 0.7;
-    }
-  }
- 
-
-
-  .icon-pajaros {
-    width: 70px;
-    height: 100px;
-    float: left;
-    border-radius: 10px;
-  }
-
-  .texto-primera-etapa {
-    margin-top: 35px;
-    color: rgb(0, 0, 0);
+  body .bio-inicio p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
     width: 90%;
-    background-color: rgba(96, 96, 97, 0.658);
-    border-radius: 6px;
-    text-align: justify;
-
-    p {
-      font-weight: bold;
-      padding: 27px;
-      font-weight: 300;
-    }
-
-    h4 {
-      text-align: center;
-    }
-  }
-
-  .texto-segunda-etapa {
-    color: rgb(10, 10, 10);
-    width: 50%;
-    border-radius: 6px;
-    text-align: justify;
-  }
-
-  .solista-boston {
-    margin-top: 50px;
-    width: 100%;
-    text-align: justify;
-
-    p,
-    h4 {
-      padding: 20px;
-    }
-
-    img {
-      width: 300px;
-      height: 350px;
-      float: right;
-      margin: 45px 20px 5px 15px;
-    }
-  }
-
-  #banner-discografia img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    width: 100%;
-  }
-
-  .card-discos {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-
-    .card-title,
-    .card-text {
-      font-weight: bold;
-      font-size: 13px;
-    }
-
-    .card {
-      filter: saturate(50%);
-      transition: filter 0.3s ease;
-      cursor: pointer;
-
-      &:hover {
-        filter: saturate(1.5);
-      }
-
-      .tarjetas-discos img {
-        transition: all 0.8s ease;
-
-        &:hover {
-          filter: grayscale(1);
-          transition: all 0.3s ease;
-        }
-      }
-    }
-
-    .btn {
-      background-color: goldenrod;
-      color: black;
-    }
-  }
-
-  .banner-contacto {
-    background-image: url(../img/contacto.jpg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .dv-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-
-    .frank-guitarra img {
-      height: 90vh;
-    }
-  }
-
-  .contact-form {
-    color: white;
-    width: 50%;
-    height: 100%;
-  }
-
-  @media screen and (max-width: 992px) {
-    body {
-      width: 100vh;
-      height: 100vh;
-
-      header h1 {
-        font-size: 15px;
-        margin-right: 100px;
-      }
-
-      header ul {
-        align-items: left;
-      }
-
-      .navbar-nav dl,
-      ol,
-      ul {
-        margin-top: 40px;
-      }
-
-      #banner-bienvenida img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-
-      section .bio-inicio {
-        width: 65vh;
-      }
-
-      .bio-inicio img {
-        height: 35vh;
-      }
-
-      .bio-inicio p {
-        text-align: justify;
-        font-size: 1em;
-        padding: 10px;
-        width: 50%;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 25px;
-      }
-
-      .navbar-nav {
-        margin-top: 350px;
-      }
-
-      .navbar-nav a {
-        text-decoration: none;
-        font-size: 25px;
-        color: rgb(5, 5, 5);
-        font-weight: bolder;
-        padding: 0px 14px;
-        z-index: 999999999999999999999999999999999999999999;
-      }
-
-      .navbar-collapse {
-        flex-basis: 100%;
-        flex-grow: 1;
-        align-items: center;
-        position: absolute;
-        margin-top: 185%;
-        background-color: rgba(255, 255, 255, 0.349);
-        border-radius: 6px;
-      }
-
-      #dvmenu {
-        top: 0px !important;
-      }
-
-      #dvloguito {
-        display: flex;
-        flex: 1;
-      }
-
-      .navbar.navbar-expand-lg.bg-body-dark {
-        top: 0px !important;
-      }
-
-      .navbar-nav dl,
-      ol,
-      ul {
-        margin-top: unset !important;
-      }
-
-      .bio-inicio {
-        position: relative;
-        width: 100%;
-        height: 70vh;
-
-        p {
-          text-align: justify;
-          font-size: 1em;
-          padding: 10px;
-          width: 90%;
-        }
-      }
-    }
   }
 }
+
+@include desktop{ 
+  body {
+    width: 100vh;
+    height: 100vh;
+  }
+  header h1 {
+    font-size: 15px;
+    margin-right: 100px;
+  }
+  header ul {
+    align-items: left;
+  }
+  .navbar-nav dl,ol, ul {
+    margin-top: 40px;
+  }
+  #banner-bienvenida img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  section .bio-inicio {
+    width: 65vh;
+  }
+  .bio-inicio img {
+    height: 35vh;
+  }
+  .bio-inicio p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
+  }
+}
+
+
+
+

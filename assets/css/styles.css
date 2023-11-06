@@ -4,17 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-  width: 100%;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-}
-body header {
+header {
   grid-area: header;
   width: 100%;
   height: 5%;
@@ -28,47 +18,73 @@ body header {
   background-color: rgba(35, 37, 36, 0.662745098);
   z-index: 999999999;
 }
-body header h1 {
+header h1 {
   font-family: "Rock Salt", cursive;
   color: white;
   font-size: 30px;
   margin-top: 4px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
 }
-body header h1:hover {
+header h1:hover {
   color: goldenrod;
 }
-body header ul {
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+header h1.fade-in {
+  opacity: 1;
+}
+header ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body header ul li {
+header ul li {
   margin-left: 25px;
 }
-body .navbar-nav a {
+
+.navbar-nav a {
   text-decoration: none;
   font-size: 15px;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: bolder;
   padding: 0px 14px;
   z-index: 1000000000000000000000000000000000000000000;
 }
-body nav ul a:hover {
-  color: rgb(0, 0, 0);
+
+nav ul a:hover {
+  color: black;
   background-color: rgba(235, 173, 15, 0.274);
   border-radius: 8px;
 }
-body #banner-bienvenida img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right center;
-  object-fit: contain;
-  width: 100%;
-}
-body main {
+
+main {
   grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #000000;
 }
 body .bio-inicio {
   position: relative;
@@ -85,7 +101,81 @@ body .bio-inicio img {
   float: left;
   height: 100vh;
 }
-body #banner-tour {
+
+#banner-bienvenida img {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  padding: 8px;
+  border: 1px solid black;
+}
+.table th {
+  background-color: black;
+  color: white;
+}
+.table tr:nth-child(odd) {
+  background-color: black;
+}
+
+tr:nth-child(1) td:nth-child(1)::before {
+  content: "01/10/2023";
+}
+tr:nth-child(1) td:nth-child(2)::before {
+  content: "Madrid";
+}
+tr:nth-child(1) td:nth-child(3)::before {
+  content: "Teatro Principal";
+}
+tr:nth-child(1) td:nth-child(4)::before {
+  content: "Sitios venta de Boletos";
+}
+
+tr:nth-child(2) td:nth-child(1)::before {
+  content: "05/10/2023";
+}
+tr:nth-child(2) td:nth-child(2)::before {
+  content: "Barcelona";
+}
+tr:nth-child(2) td:nth-child(3)::before {
+  content: "Auditorio Central";
+}
+tr:nth-child(2) td:nth-child(4)::before {
+  content: "Sitios venta de Boletos";
+}
+
+tr:nth-child(3) td:nth-child(1)::before {
+  content: "10/10/2023";
+}
+tr:nth-child(3) td:nth-child(2)::before {
+  content: "Valencia";
+}
+tr:nth-child(3) td:nth-child(3)::before {
+  content: "Centro de Eventos";
+}
+tr:nth-child(3) td:nth-child(4)::before {
+  content: "Sitios venta de Boletos";
+}
+
+tr:nth-child(4) td:nth-child(1)::before {
+  content: "11/04/2024";
+}
+tr:nth-child(4) td:nth-child(2)::before {
+  content: "Buenos Aires";
+}
+tr:nth-child(4) td:nth-child(3)::before {
+  content: "Obelisco";
+}
+tr:nth-child(4) td:nth-child(4)::before {
+  content: "Sitios venta de Boletos";
+}
+
+#banner-tour {
   background-image: url(../img/bg-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,136 +185,156 @@ body #banner-tour {
   background-attachment: fixed;
   background-position: top center;
 }
-body #banner-tour #banner-tour h3 {
+#banner-tour #banner-tour h3 {
   color: white;
   font-size: 50px;
   font-weight: 400;
   margin-left: 20%;
 }
-body footer {
-  grid-area: footer;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  font-size: 10px;
+
+#dark-mode-button {
+  letter-spacing: 1px;
+  text-transform: uppercase;
   text-align: center;
+  border: 2px solid rgba(60, 60, 61, 0.6);
+  box-shadow: 1px 1px 2px rgba(12, 12, 12, 0.4);
+  border-radius: 10px;
+  padding: 3px 10px;
 }
-body .primera-etapa {
+
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.primera-etapa {
   display: flex;
   flex-direction: row;
 }
-body .bio-banner {
+
+.bio-banner {
   margin-top: 50px;
   width: 100%;
   height: 500px;
 }
-body .bio-banner img {
+.bio-banner img {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-body .icon-despues,
-body .icon-travesia {
+
+.icon, .icon-despues, .icon-pajaros, .icon-travesia {
   width: 170px;
   height: 200px;
-  float: left;
   margin-right: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
-body .icon-despues:hover,
-body .icon-travesia:hover {
+.icon:hover, .icon-despues:hover, .icon-pajaros:hover, .icon-travesia:hover {
   transform: scale(1.1);
   filter: grayscale(100%);
   opacity: 0.7;
 }
-body .icon-pajaros {
-  width: 70px;
-  height: 100px;
+
+.icon-despues, .icon-pajaros, .icon-travesia {
   float: left;
-  border-radius: 10px;
 }
-body .texto-primera-etapa {
+
+.icon-travesia {
+  float: right;
+}
+
+.texto-primera-etapa {
   margin-top: 35px;
-  color: rgb(0, 0, 0);
+  color: black;
   width: 90%;
   background-color: rgba(96, 96, 97, 0.658);
   border-radius: 6px;
   text-align: justify;
 }
-body .texto-primera-etapa p {
+.texto-primera-etapa p {
   font-weight: bold;
   padding: 27px;
   font-weight: 300;
 }
-body .texto-primera-etapa h4 {
+.texto-primera-etapa h4 {
   text-align: center;
 }
-body .texto-segunda-etapa {
-  color: rgb(10, 10, 10);
+
+.texto-segunda-etapa {
+  color: black;
   width: 50%;
   border-radius: 6px;
   text-align: justify;
 }
-body .solista-boston {
+
+.solista-boston {
   margin-top: 50px;
   width: 100%;
   text-align: justify;
 }
-body .solista-boston p,
-body .solista-boston h4 {
+.solista-boston p,
+.solista-boston h4 {
   padding: 20px;
 }
-body .solista-boston img {
+.solista-boston img {
   width: 300px;
   height: 350px;
   float: right;
   margin: 45px 20px 5px 15px;
 }
-body #banner-discografia img {
+
+#banner-discografia img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   width: 100%;
 }
-body .card-discos {
+
+.card-discos {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }
-body .card-discos .card-title,
-body .card-discos .card-text {
+.card-discos .card-title,
+.card-discos .card-text {
   font-weight: bold;
   font-size: 13px;
 }
-body .card-discos .card {
+.card-discos .card {
   filter: saturate(50%);
   transition: filter 0.3s ease;
   cursor: pointer;
 }
-body .card-discos .card:hover {
+.card-discos .card:hover {
   filter: saturate(1.5);
 }
-body .card-discos .card .tarjetas-discos img {
-  transition: all 0.8s ease;
+.card-discos .card .tarjetas-discos img {
+  transition: all 2s ease;
 }
-body .card-discos .card .tarjetas-discos img:hover {
+.card-discos .card .tarjetas-discos img:hover {
   filter: grayscale(1);
-  transition: all 0.3s ease;
 }
-body .card-discos .btn {
+.card-discos .btn {
   background-color: goldenrod;
   color: black;
 }
-body .banner-contacto {
+.card-discos .btn:hover {
+  transform: translateY(-2px);
+  transition: transform 0.8s ease-out;
+}
+
+.banner-contacto {
   background-image: url(../img/contacto.jpg);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .dv-contact {
+
+.dv-contact {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -232,50 +342,17 @@ body .dv-contact {
   justify-content: center;
   align-items: center;
 }
-body .dv-contact .frank-guitarra img {
+.dv-contact .frank-guitarra img {
   height: 90vh;
 }
-body .contact-form {
+
+.contact-form {
   color: white;
   width: 50%;
   height: 100%;
 }
-@media screen and (max-width: 992px) {
-  body body {
-    width: 100vh;
-    height: 100vh;
-  }
-  body body header h1 {
-    font-size: 15px;
-    margin-right: 100px;
-  }
-  body body header ul {
-    align-items: left;
-  }
-  body body .navbar-nav dl,
-  body body ol,
-  body body ul {
-    margin-top: 40px;
-  }
-  body body #banner-bienvenida img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  body body section .bio-inicio {
-    width: 65vh;
-  }
-  body body .bio-inicio img {
-    height: 35vh;
-  }
-  body body .bio-inicio p {
-    text-align: justify;
-    font-size: 1em;
-    padding: 10px;
-    width: 50%;
-  }
-}
-@media screen and (max-width: 992px) and (max-width: 600px) {
+
+@media (max-width: 599px) {
   body header h1 {
     font-size: 25px;
   }
@@ -324,6 +401,39 @@ body .contact-form {
     font-size: 1em;
     padding: 10px;
     width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    width: 100vh;
+    height: 100vh;
+  }
+  header h1 {
+    font-size: 15px;
+    margin-right: 100px;
+  }
+  header ul {
+    align-items: left;
+  }
+  .navbar-nav dl, ol, ul {
+    margin-top: 40px;
+  }
+  #banner-bienvenida img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  section .bio-inicio {
+    width: 65vh;
+  }
+  .bio-inicio img {
+    height: 35vh;
+  }
+  .bio-inicio p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
   }
 }
 

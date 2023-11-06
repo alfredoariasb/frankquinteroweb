@@ -1,0 +1,84 @@
+.primera-etapa {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio-banner {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+
+    img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    }
+}
+
+.icon {
+    width: 170px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.1);
+        filter: grayscale(100%);
+        opacity: 0.7;
+        }
+}
+
+.icon-despues,.icon-pajaros,.icon-travesia {
+    @extend .icon;
+    float: left;
+}
+
+.icon-travesia {
+    @extend .icon;
+    float: right;
+}
+
+.texto-primera-etapa {
+    margin-top: 35px;
+    color: $terciary-color;
+    width: 90%;
+    background-color: $back-color-text;
+    border-radius: 6px;
+    text-align: justify;
+
+    p {
+    font-weight: bold;
+    padding: 27px;
+    font-weight: 300;
+    }
+
+    h4 {
+    text-align: center;
+    }
+}
+
+.texto-segunda-etapa {
+    color: $terciary-color;
+    width:  calc($ancho-bloque/2);
+    border-radius: 6px;
+    text-align: justify;
+}
+
+.solista-boston {
+    margin-top: 50px;
+    width: 100%;
+    text-align: justify;
+
+    p,
+    h4 {
+    padding: 20px;
+    }
+
+    img {
+    width: 300px;
+    height: 350px;
+    float: right;
+    margin: 45px 20px 5px 15px;
+    }
+}

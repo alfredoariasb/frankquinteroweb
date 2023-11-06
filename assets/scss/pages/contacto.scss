@@ -1,0 +1,27 @@
+
+.banner-contacto {
+    background-image: url(../img/contacto.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dv-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .frank-guitarra img {
+    height: 90vh;
+    }
+}
+
+.contact-form {
+    color: $secondary-color;
+    width: calc($ancho-bloque/2);
+    height: 100%;
+}

@@ -1,0 +1,49 @@
+
+#banner-discografia img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+}
+
+.card-discos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+    .card-title,
+    .card-text {
+    font-weight: bold;
+    font-size: 13px;
+    }
+
+    .card {
+    filter: saturate(50%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        filter: saturate(1.5);        
+    }
+
+    .tarjetas-discos img {
+        transition: all 2s ease;
+        &:hover {
+        filter: grayscale(1);
+        
+        
+        }
+    }
+}
+
+    .btn {
+    background-color: $primary-color;
+    color: $terciary-color;
+    &:hover {
+        transform: translateY(-2px);
+        transition: transform 0.8s ease-out;
+    }
+    }
+}

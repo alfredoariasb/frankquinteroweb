@@ -1,0 +1,29 @@
+$primary-color: goldenrod;
+$secondary-color: white;
+$terciary-color: black;
+$nav-color: rgba(235, 173, 15, 0.274);
+$back-color-text: rgba(96, 96, 97, 0.658);
+$background-header: #232524a9;
+$background-table: #333;
+$ancho-bloque: 100%;
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1023px;
+$desktop-min-width: 1024px;
+
+// Variables para el modo claro
+$background-color-light: #ffffff;
+$text-color-light: #000000;
+
+// Variables para el modo oscuro
+$background-color-dark: #000000;
+$text-color-dark: #ffffff;
+
+$tour-dates: (
+("01/10/2023", "Madrid", "Teatro Principal", "Sitios venta de Boletos"),
+("05/10/2023", "Barcelona", "Auditorio Central", "Sitios venta de Boletos"),
+("10/10/2023", "Valencia", "Centro de Eventos", "Sitios venta de Boletos"),
+("11/04/2024", "Buenos Aires", "Obelisco", "Sitios venta de Boletos"),
+);
+
+

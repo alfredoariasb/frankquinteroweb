@@ -1,0 +1,66 @@
+
+header {
+    grid-area: header;
+    width: 100%;
+    height: 5%;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $background-header;
+    z-index: 999999999;
+
+    h1 {
+    font-family: $tipografia-frank-inicio;
+    color:$secondary-color;
+    font-size: 30px;
+    margin-top: 4px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    &:hover {
+        color: $primary-color;
+        }
+    }
+
+    @keyframes fadeIn {
+        to {
+          opacity: 1; // Al final de la animación, la opacidad se establecerá en 1
+        }
+    }
+    
+    h1.fade-in {
+    opacity: 1;
+    }
+
+    ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    li {
+        margin-left: 25px;
+        }
+    }
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: $secondary-color;
+    font-weight: bolder;
+    padding: 0px 14px;
+    z-index: 999999999999999999999999999999999999999999;
+    
+}
+
+nav ul a:hover {
+    color: $terciary-color;
+    background-color: $nav-color;
+    border-radius: 8px;
+}
+
