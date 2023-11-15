@@ -5,19 +5,22 @@
     flex-direction: row;
 }
 
-.bio-banner {
-    margin-top: 40px;
-    width: 100%;
-    height: 500px;
+body {
+    background-color: black;
+}
 
-    img {
+.bio-banner img{  
+    
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
-    }
+    filter: brightness(28%) contrast(86%);
+    -webkit-filter: brightness(28%) contrast(86%);
+    -moz-filter: brightness(28%) contrast(86%);
 }
+
 
 .icon {
     width: 170px;
@@ -48,11 +51,9 @@
 
 .texto-primera-etapa {
     margin-top: 40px;
-    color: $terciary-color;
+    color: $secondary-color;
     width: 100%;
-    background-color: $back-color-text;
-    -webkit-box-shadow: inset 3px 4px 32px -8px #969697; 
-    box-shadow: inset 3px 4px 32px -8px #969697;
+    
     text-align: justify;
 
     p {
@@ -69,13 +70,13 @@
 
 
 .texto-segunda-etapa {
-    color: $terciary-color;
+    color: $secondary-color;
     width:  calc($ancho-bloque/2);
     border-radius: 6px;
     text-align: justify;
 }
 .texto-segunda-etapa-2 {
-    color: black;
+    color: rgb(252, 251, 251);
     width: 98%;
     border-radius: 6px;
     text-align: justify;
