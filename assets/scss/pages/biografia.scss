@@ -1,17 +1,21 @@
+
+
 .primera-etapa {
     display: flex;
     flex-direction: row;
 }
 
 .bio-banner {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     height: 500px;
 
     img {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    object-fit: cover;
     }
 }
 
@@ -20,6 +24,9 @@
     height: 200px;
     margin-right: 10px;
     border-radius: 10px;
+    box-shadow: 3px 4px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 4px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 20px 0px rgba(0,0,0,0.75);
     transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
     
     &:hover {
@@ -40,23 +47,26 @@
 }
 
 .texto-primera-etapa {
-    margin-top: 35px;
+    margin-top: 40px;
     color: $terciary-color;
-    width: 90%;
+    width: 100%;
     background-color: $back-color-text;
-    border-radius: 6px;
+    -webkit-box-shadow: inset 3px 4px 32px -8px #969697; 
+    box-shadow: inset 3px 4px 32px -8px #969697;
     text-align: justify;
 
     p {
     font-weight: bold;
-    padding: 27px;
     font-weight: 300;
     }
 
     h4 {
     text-align: center;
+    padding-top: 30px;
     }
+
 }
+
 
 .texto-segunda-etapa {
     color: $terciary-color;
@@ -64,10 +74,29 @@
     border-radius: 6px;
     text-align: justify;
 }
+.texto-segunda-etapa-2 {
+    color: black;
+    width: 98%;
+    border-radius: 6px;
+    text-align: justify;
+    padding: 1%;
+}
 
+div#dvarriba-dsk {
+    display: flex;
+    width: 100%;
+    padding: 1%;
+}
+
+div#contenedormobil1 {
+    display: flex;
+}
+div#contenedormobil2 {
+    text-align: justify;
+}
 .solista-boston {
     margin-top: 50px;
-    width: 100%;
+    width: 50%;
     text-align: justify;
 
     p,
@@ -76,9 +105,8 @@
     }
 
     img {
-    width: 300px;
-    height: 350px;
+    width: 80%;
     float: right;
-    margin: 45px 20px 5px 15px;
+    margin: 20px 20px 5px 15px;
     }
 }

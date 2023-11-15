@@ -90,12 +90,14 @@ body .bio-inicio {
   position: relative;
   width: 100%;
   height: 100vh;
+  background-color: black;
 }
 body .bio-inicio p {
   text-align: justify;
   font-size: 1.1em;
   padding: 30px;
   width: 70%;
+  color: white;
 }
 body .bio-inicio img {
   float: left;
@@ -219,14 +221,16 @@ tr:nth-child(4) td:nth-child(4)::before {
 }
 
 .bio-banner {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
   height: 500px;
 }
 .bio-banner img {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .icon, .icon-despues, .icon-pajaros, .icon-travesia {
@@ -234,6 +238,9 @@ tr:nth-child(4) td:nth-child(4)::before {
   height: 200px;
   margin-right: 10px;
   border-radius: 10px;
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.75);
   transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 .icon:hover, .icon-despues:hover, .icon-pajaros:hover, .icon-travesia:hover {
@@ -251,20 +258,21 @@ tr:nth-child(4) td:nth-child(4)::before {
 }
 
 .texto-primera-etapa {
-  margin-top: 35px;
+  margin-top: 40px;
   color: black;
-  width: 90%;
+  width: 100%;
   background-color: rgba(96, 96, 97, 0.658);
-  border-radius: 6px;
+  -webkit-box-shadow: inset 3px 4px 32px -8px #969697;
+  box-shadow: inset 3px 4px 32px -8px #969697;
   text-align: justify;
 }
 .texto-primera-etapa p {
   font-weight: bold;
-  padding: 27px;
   font-weight: 300;
 }
 .texto-primera-etapa h4 {
   text-align: center;
+  padding-top: 30px;
 }
 
 .texto-segunda-etapa {
@@ -274,9 +282,31 @@ tr:nth-child(4) td:nth-child(4)::before {
   text-align: justify;
 }
 
+.texto-segunda-etapa-2 {
+  color: black;
+  width: 98%;
+  border-radius: 6px;
+  text-align: justify;
+  padding: 1%;
+}
+
+div#dvarriba-dsk {
+  display: flex;
+  width: 100%;
+  padding: 1%;
+}
+
+div#contenedormobil1 {
+  display: flex;
+}
+
+div#contenedormobil2 {
+  text-align: justify;
+}
+
 .solista-boston {
   margin-top: 50px;
-  width: 100%;
+  width: 50%;
   text-align: justify;
 }
 .solista-boston p,
@@ -284,10 +314,9 @@ tr:nth-child(4) td:nth-child(4)::before {
   padding: 20px;
 }
 .solista-boston img {
-  width: 300px;
-  height: 350px;
+  width: 80%;
   float: right;
-  margin: 45px 20px 5px 15px;
+  margin: 20px 20px 5px 15px;
 }
 
 #banner-discografia img {
@@ -358,9 +387,9 @@ tr:nth-child(4) td:nth-child(4)::before {
   height: 100%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 990px) {
   body header h1 {
-    font-size: 25px;
+    font-size: 1em;
   }
   body .navbar-nav {
     margin-top: 350px;
@@ -400,7 +429,6 @@ tr:nth-child(4) td:nth-child(4)::before {
   body .bio-inicio {
     position: relative;
     width: 100%;
-    height: 70vh;
   }
   body .bio-inicio p {
     text-align: justify;
@@ -408,10 +436,26 @@ tr:nth-child(4) td:nth-child(4)::before {
     padding: 10px;
     width: 90%;
   }
+  #banner-bienvenida img {
+    width: 100%;
+  }
+  #dvarriba-dsk {
+    display: none !important;
+  }
+  #dvarriba-mbl {
+    display: unset;
+  }
+  div#dvbiotext {
+    display: flex;
+    width: 100%;
+  }
+  div#dvbioimg {
+    display: none;
+  }
 }
-@media (max-width: 992px) {
+@media (min-width: 995px) {
   body {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
   }
   header h1 {
@@ -422,7 +466,7 @@ tr:nth-child(4) td:nth-child(4)::before {
     align-items: left;
   }
   .navbar-nav dl, ol, ul {
-    margin-top: 40px;
+    margin-top: 0px;
   }
   #banner-bienvenida img {
     object-fit: cover;
@@ -440,6 +484,12 @@ tr:nth-child(4) td:nth-child(4)::before {
     font-size: 1em;
     padding: 10px;
     width: 50%;
+  }
+  #dvarriba-mbl {
+    display: none;
+  }
+  #dvarriba-dsk {
+    display: unset;
   }
 }
 
