@@ -444,6 +444,12 @@ div#contenedormobil2 {
   div#dvbioimg {
     display: none;
   }
+  .frank-guitarra {
+    display: none;
+  }
+  .dv-contact {
+    margin-bottom: 15%;
+  }
 }
 @media (min-width: 995px) {
   body {

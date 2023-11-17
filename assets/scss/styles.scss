@@ -87,6 +87,12 @@
   div#dvbioimg {
     display: none;
   }
+  #divmobil2>p{
+    color:black;
+  }
+  .frank-guitarra{
+    display: none;
+  }
 }
 
 @include desktop{ 
@@ -131,6 +137,7 @@
   #dvarriba-dsk{
     display: unset;
   }
+  
 }
 
 
