@@ -7,6 +7,7 @@
 
 body {
     background-color: black;
+    
 }
 
 .bio-banner img{  
@@ -50,10 +51,9 @@ body {
 }
 
 .texto-primera-etapa {
-    margin-top: 40px;
+    margin: 40px 40px;
     color: $secondary-color;
-    width: 100%;
-    
+
     text-align: justify;
 
     p {

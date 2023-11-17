@@ -13,6 +13,11 @@
     justify-content: center;
     margin-top: 20px;
 
+    .card-body {
+        background-color: black;
+        color: white;
+    }
+
     .card-title,
     .card-text {
     font-weight: bold;
@@ -39,8 +44,8 @@
 }
 
     .btn {
-    background-color: $primary-color;
-    color: $terciary-color;
+    
+    color: $secondary-color;
     &:hover {
         transform: translateY(-2px);
         transition: transform 0.8s ease-out;
