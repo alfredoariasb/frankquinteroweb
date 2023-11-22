@@ -94,7 +94,11 @@ div#contenedormobil1 {
 }
 div#contenedormobil2 {
     text-align: justify;
-    color: white;
+    
+    p{
+        @extend .texto-segunda-etapa;
+        color: white;
+    }
 }
 .solista-boston {
     margin-top: 50px;
